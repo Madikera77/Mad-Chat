@@ -1,0 +1,118 @@
+.chatWindow {
+    position: relative;
+    ;
+    display: inline-flex;
+    ;
+    flex-direction: column;
+    ;
+    justify-content: flex-end;
+    ;
+    height: 100%;
+    width: 420px;
+    box-sizing: border-box;
+    ;
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px;
+        z-index: 1;
+        color: #fafafa !important;
+        border-bottom: 1px solid;
+        .title {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    .chatPanel {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1;
+        .scrollable {
+            height: 100%;
+            overflow: auto;
+            .NoDots {
+                hr {
+                    visibility: hidden;
+                }
+                .OutputText {
+                    white-space: normal !important;
+                    word-break: break-all !important;
+                    overflow: initial !important;
+                    width: 100%;
+                    height: auto !important;
+                    color: #fafafa !important;
+                }
+            }
+        }
+        .InputPanel {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            align-self: center;
+            border-top: 1px solid #fafafa;
+        }
+    }
+}
+
+.wrapper {
+    cursor: pointer;
+}
+
+.ContentWrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    z-index: 1;
+    background-color: white;
+    .Center {
+        position: relative;
+        max-width: 1000px;
+        margin: auto;
+        padding: 40px 0;
+        height: 100%;
+        box-sizing: border-box;
+        .Content {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 20px;
+            height: 100%;
+            .Relative {
+                position: relative;
+                .Sticky {
+                    position: fixed;
+                    .AvatarWrapper {
+                        cursor: pointer;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            width: 300px;
+                            margin: 30px 0;
+                        }
+                        a {
+                            text-decoration: none;
+                        }
+                        img {
+                            box-shadow: rgba(255, 255, 255, 0.2) 0 0 10px 2px;
+                        }
+                        .UserName {
+                            font-size: 24px;
+                            height: 27px;
+                            text-align: center;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
